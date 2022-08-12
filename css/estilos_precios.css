@@ -1,0 +1,78 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: #2E4053;
+	font-family: Arial;
+}
+.title_body h1{
+	text-align: center;
+	font-size: 35px;
+	margin: 15px 0px 10px;
+	color: white;
+	/*text-shadow: 0px 0px 2px #ffffff;*/
+}
+.title_body h4{
+	text-align: center;
+	font-size: 13px;
+	color: white;
+	/*text-shadow: 0px 0px 2px #ffffff;*/
+}
+.contenedor{
+	width: 90%;
+	max-width: 900px;
+	margin: auto;
+	height: 80vh;/*vh=ventana horizontal*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.tabla{
+	width: 35%;
+	height: 550px;
+	margin: auto;
+	border: 1px solid white;
+	border-radius: 4px;
+	padding: 60px;
+	text-align: center;
+	flex-grow: 1;
+	color: white;
+}
+.tabla>h2{
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+.tabla img{
+	width: 200px;
+	height: 200px;
+	margin-bottom: 35px;
+}
+.tabla>h3{
+	font-size: 30px;
+	border-bottom: 20px;
+}
+.tabla>p{
+	display: block;
+	border-bottom: 20px;
+}
+.boton{
+	display: inline-block;
+	width: 150px;
+	padding: 12px;
+	background: cadetblue;
+	text-decoration: none;
+	color: white;
+	border-radius: 100px;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 500;
+	margin: auto;
+
+}
+.boton:hover{
+	background: lightblue;
+	transition: all 0.4s;
+}

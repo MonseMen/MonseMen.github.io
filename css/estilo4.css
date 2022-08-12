@@ -1,0 +1,124 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: arial;
+}
+.content-all{
+	width: 100%;
+	display: flex;/*hacen que las imagenes se junten una con otra*/
+	flex-wrap: wrap;
+}
+.content-image{
+	width: 600px;
+	height: 400px;
+	margin: auto;
+	margin-top: 110px;
+	position: relative;/*ocupa solo el espacio de la imagen*/
+	overflow: hidden;/*solo visualice lo de la imagen*/
+}
+.content-image img{
+	width: 100%;
+	transition: all 0.4s;
+
+}
+/*iniciamos con las sombras*/
+.content-1{
+	width: 1000px;
+	height: 1000px;
+	position: absolute;/*no ocupe otro espacio*/
+	background: rgba(212, 172, 13, 0.5);
+	top: 0;
+	transform: rotate(-30deg);
+	margin-left: -750px;
+	transition: all 0.3s;
+}
+.content-2{
+	width: 1000px;
+	height: 1000px;
+	position: absolute;/*no ocupe otro espacio*/
+	background: rgba(212, 172, 13, 0.5);
+	top: 0;
+	transform: rotate(-30deg);
+	margin-left: -800px;
+	transition: all 0.4s;
+}
+.content-3{
+	width: 1000px;
+	height: 1000px;
+	position: absolute;/*no ocupe otro espacio*/
+	background: rgba(212, 172, 13, 0.4);
+	top: 0;
+	transform: rotate(30deg);
+	margin-left: -800px;
+	margin-top: -500px;
+	transition: all 0.8s;
+}
+.content-4{
+	width: 1000px;
+	height: 1000px;
+	position: absolute;/*no ocupe otro espacio*/
+	background: rgba(212, 172, 13, 0.4);
+	top: 0;
+	transform: rotate(30deg);
+	margin-left: -850px;
+	margin-top: -500px;
+	transition: all 0.75s;
+	box-shadow: 0px 1px 20px -5px #7D6608;
+}
+/*iniciamos efecto hover*/
+.content-image:hover .content-1{
+	width: 180%;
+	transition: all 0.9s;
+}
+.content-image:hover .content-2{
+	width: 180%;
+	transition: all 0.4s;
+}
+.content-image:hover .content-3{
+	width: 180%;
+	transition: all 0.6s;
+}
+.content-image:hover .content-4{
+	width: 180%;
+	transition: all 0.8s;
+}
+.content-image:hover img{
+	transform: scale(1.2);
+	transition: all 0.5;
+	
+}
+.content-description{
+	position: absolute;
+	top: 80px;
+	width: 320px;
+	padding: 12px;
+	color: white;
+	text-align: justify;
+	z-index: 2;/*lleva hacia al frente el texto*/
+}
+.content-description h2{
+	font-size: 26px;
+	color: #34495E;
+	text-align: center;
+	opacity: 0;
+	transform: scale(0.3);
+	transition: all 0.5s;
+}
+.content-description p{
+	margin-top: 25px;
+	font-size: 18px;
+	opacity: 0;
+	transform: scale(1.4);
+	transition: all 0.4s;
+}
+.content-image:hover h2{
+	opacity: 1;
+	transition: all 0.5s;
+	transform: scale(1.0);
+}
+.content-image:hover p{
+	opacity: 1;
+	transition: all 0.4s;
+	transform: scale(1.0);
+}
